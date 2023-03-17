@@ -6,8 +6,10 @@
     --primary-color: #0f1b4c;
 }
 
-html, body {
-    scroll-behavior: smooth;
+html,
+body {
+    scroll-behavior: smooth !important;
+    transition: 0.5s;
 }
 
 html {
@@ -62,6 +64,7 @@ a {
     height: calc(100vh - 90px);
     position: relative;
     display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -102,12 +105,7 @@ a {
     padding: 13px 16px;
 }
 
-.hero-info {
-    display: flex;
-    margin-top: 130px;
-}
-
-.hero-info .text-info {
+.hero-wrap .text-info {
     width: 50%;
 }
 
@@ -140,7 +138,7 @@ a {
     margin-top: 40px;
 }
 
-.hero-info .hero-img {
+.hero-wrap .hero-img {
     position: absolute;
     bottom: 0;
     right: calc((100vw - 1110px) / 2 - 100px);
@@ -538,7 +536,7 @@ a {
     font-weight: 600;
     font-size: 3.5rem;
     line-height: 1.5;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .subcription .desc {
@@ -546,12 +544,12 @@ a {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.88;
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 0.75;
 }
 
 .subcription .btn {
-    background: #FFFFFF;
+    background: #ffffff;
     margin-top: 20px;
     min-width: 151px;
     font-weight: 500;
@@ -581,7 +579,7 @@ a {
     font-family: Lato;
     font-weight: 700;
     font-size: 2rem;
-    color: #1C1C1D;
+    color: #1c1c1d;
 }
 
 .footer .list,
@@ -594,10 +592,10 @@ a {
 }
 
 .footer .item a,
-.footer .desc{
+.footer .desc {
     font-weight: 400;
     font-size: 1.6rem;
-    color: #7A7A7E;
+    color: #7a7a7e;
     white-space: nowrap;
 }
 
@@ -618,7 +616,7 @@ a {
     justify-content: center;
     width: 28px;
     height: 28px;
-    background: #F9F9F9;
+    background: #f9f9f9;
     border-radius: 8px;
 }
 
@@ -638,5 +636,5 @@ a {
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.5;
-    color: #C2C2C2;
+    color: #c2c2c2;
 }
